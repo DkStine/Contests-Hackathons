@@ -5,6 +5,7 @@ import Launch from './pages/Launch';
 import Register from './pages/Register';
 import UserDashboard from './pages/UserDashboard';
 import ManagerDashboard from './pages/ManagerDashboard';
+import Location from './pages/Location';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -35,6 +36,7 @@ const App: React.FC = () => (
         <Route path="/Register" component={Register} exact />
         <Route path="/ManagerDashboard" component={ManagerDashboard} exact />
         <Route path="/UserDashboard" component={UserDashboard} exact />
+        <Route path="/Location" component={Location} exact />
         
       </IonRouterOutlet>
     </IonReactRouter>
