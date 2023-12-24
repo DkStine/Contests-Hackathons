@@ -13,8 +13,13 @@ import {
   IonToolbar,
   IonTitle,
   IonContent,
+  IonFab,
+  IonFabButton,
+  IonIcon,
 } from "@ionic/react";
-import LeafletMap from "../components/LeafletMap";
+import LeafletMap from "../components/LeafletMap/LeafletMap";
+import styles from "../theme/UserDashboard.module.css";
+import { micOutline } from "ionicons/icons";
 
 const UserDashboard: React.FC = () => {
   return (
@@ -71,7 +76,48 @@ const UserDashboard: React.FC = () => {
         </IonRow>
       </IonGrid> */}
       <IonContent>
-        <LeafletMap />
+        <IonCard className={styles["dashboard-card"]} routerLink="/Location">
+          <IonCardContent>
+            <IonCardTitle>Real Time Location</IonCardTitle>
+            <img
+              src='../assets/images/location.svg'
+              alt="Real Time Location"
+              className={styles["card-image"]}
+            />
+          </IonCardContent>
+        </IonCard>
+
+        <IonCard
+          className={styles["dashboard-card"]}
+          routerLink="/notifications"
+        >
+          <IonCardContent>
+            <IonCardTitle>Assigned tasks</IonCardTitle>
+            <img
+              src='../assets/images/tasks.jpg'
+              alt="Assigned Tasks"
+              className={styles["card-image"]}
+            />
+          </IonCardContent>
+        </IonCard>
+
+        <IonCard className={styles["dashboard-card"]} routerLink="/settings">
+          <IonCardContent>
+            <IonCardTitle>Report</IonCardTitle>
+            <img
+              src='../assets/images/report.jpg'
+              alt="Report"
+              className={styles["card-image"]}
+            />
+          </IonCardContent>
+        </IonCard>
+
+        <IonFab vertical="bottom" horizontal="end" slot="fixed">
+          <IonFabButton routerLink="/voice-assistant">
+            <IonIcon icon={micOutline} />
+          </IonFabButton>
+        </IonFab>
+        {/* <LeafletMap /> */}
       </IonContent>
     </IonPage>
   );
