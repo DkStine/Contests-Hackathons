@@ -1,0 +1,30 @@
+.dashboard-card {
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+  height: 150px; /* Set a fixed height to make the card square */
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  IonCardContent {
+    padding: 16px;
+  }
+
+  IonCardTitle {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333333;
+  }
+
+  .card-image {
+    width: 100%;
+    height: 100%; /* Make the image take the full height of the card */
+    object-fit: cover; /* Ensure the image covers the entire space, maintaining aspect ratio */
+    border-radius: 8px;
+    margin-bottom: 12px;
+  }
+}
