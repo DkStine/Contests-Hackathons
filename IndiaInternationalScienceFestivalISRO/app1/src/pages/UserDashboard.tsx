@@ -79,11 +79,11 @@ const UserDashboard: React.FC = () => {
         <IonCard className={styles["dashboard-card"]} routerLink="/Location">
           <IonCardContent>
             <IonCardTitle>Real Time Location</IonCardTitle>
-            <img
+            {/* <img
               src='../assets/images/location.svg'
               alt="Real Time Location"
               className={styles["card-image"]}
-            />
+            /> */}
           </IonCardContent>
         </IonCard>
 
@@ -93,22 +93,22 @@ const UserDashboard: React.FC = () => {
         >
           <IonCardContent>
             <IonCardTitle>Assigned tasks</IonCardTitle>
-            <img
+            {/* <img
               src='../assets/images/tasks.jpg'
               alt="Assigned Tasks"
               className={styles["card-image"]}
-            />
+            /> */}
           </IonCardContent>
         </IonCard>
 
         <IonCard className={styles["dashboard-card"]} routerLink="/settings">
           <IonCardContent>
             <IonCardTitle>Report</IonCardTitle>
-            <img
+            {/* <img
               src='../assets/images/report.jpg'
               alt="Report"
               className={styles["card-image"]}
-            />
+            /> */}
           </IonCardContent>
         </IonCard>
 
